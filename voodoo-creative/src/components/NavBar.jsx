@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import NavLogo from '../assets/navLogo.svg';
 import '../styles/NavBar.css';
 
@@ -8,13 +8,13 @@ const NavBar = () => {
         <nav className="navbar">
             <ul>
                 <li><img src={NavLogo} alt="Voodoo Creative"/></li>
-                <li><Link to="/about">About</Link></li>
+                <li><NavLink to="/our-work" className={({ isActive }) => (isActive ? 'active' : '')}>Our Work</NavLink></li>
                 <li>|</li>
-                <li><Link to="/services">Services</Link></li>
+                <li><NavLink to="/services" className={({ isActive }) => (isActive ? 'active' : '')}>Services</NavLink></li>
                 <li>|</li>
-                <li><Link to="/our-work">Our Work</Link></li>
+                <li><NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>About</NavLink></li>
                 <li>|</li>
-                <li><Link to="/contact">Contact</Link></li>
+                <li><NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>Contact</NavLink></li>
             </ul>
         </nav>
     );

@@ -5,6 +5,7 @@ nav {
     display: inline-block;
     top: 40px;
     left: 0;
+    z-index: 1000;
 }
 
 nav::after {
@@ -52,4 +53,8 @@ nav ul li img {
     height: auto;
     top: -30px;
     left: 30px;
+}
+
+.active {
+    color: cyan;
 }
