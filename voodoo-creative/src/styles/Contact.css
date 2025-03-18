@@ -1,25 +1,22 @@
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--background-color);
-    padding: 2rem;
-    color: #333;
-}
-
 h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
 
+
 .contact-form {
-    width: 400px;
+    max-width: 1000px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
+}
+
+.input-field:nth-child(7),
+.input-field:nth-child(8),
+.input-field:nth-child(9),
+.input-field:nth-child(10){
+    flex: 1 1 100%;
 }
 
 label {
@@ -30,10 +27,10 @@ label {
 }
 
 input, select, textarea {
-    width: 100%;
+    flex: 1;
+    min-width: 400px;
     padding: 0.5rem;
-    border: none;
-    border-bottom: 2px solid #000;
+    border: 2px solid rgb(160, 160, 160);
     font-size: 1rem;
     font-family: inherit;
     background-color: transparent;
@@ -42,21 +39,29 @@ input, select, textarea {
 
 input:focus, select:focus, textarea:focus {
     outline: none;
-    border-color: rgb(160, 160, 160);
+    border-color: black;
 }
 
 select {
-    appearance: none; /* Removes default dropdown styling */
     cursor: pointer;
 }
 
-textarea {
+textarea, .file-upload {
     height: 120px;
     resize: none;
 }
 
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 1 100%;
+    text-align: left;
+}
+
 button {
-    background-color: #9b5252;
+    background-color: black;
     color: white;
     border: none;
     padding: 0.8rem;
@@ -64,14 +69,12 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border-radius: 4px;
 }
 
 button:hover {
     background-color: cyan;
 }
 
-/* Subtle hover effect for select */
 select:hover {
     border-color: rgb(160, 160, 160);
 }

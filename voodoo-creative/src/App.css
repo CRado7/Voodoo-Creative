@@ -9,6 +9,11 @@
   src: url(./fonts/Avenir.ttc) format('truetype');
 }
 
+@font-face {
+  font-family: 'Cherolina';
+  src: url(./fonts/Cherolina.ttf) format('truetype');
+}
+
 body {
   background-image: url('/background.png');
   background-size: cover;
