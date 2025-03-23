@@ -1,6 +1,8 @@
 import Reia from "../assets/reia-thumbnail.png";
 import TPS from "../assets/tps-thumbnail.png";
-import ChungLi from "../assets/ChungLi-thumbnail.png";
+import ChungLi from "../assets/chung-li/Oompa-Banner.svg";
+    import Oompa from "../assets/chung-li/Oompa.png";
+    import Identity from "../assets/chung-li/Identity.png";
 const jobData = [
     {
         id: 1,
@@ -14,7 +16,7 @@ const jobData = [
         tag: "Launching a newly FDA approved medical device that provides support for women.",
         header: {
             title: "Bringing a new medical device to the web with a fresh design and digestible content.",
-            intro: "Reia is a medical device company that provides support for women. They recently launched a new FDA approved device and needed a website to showcase their product and provide information to potential customers. The goal was to create a modern, user-friendly website that would effectively communicate the benefits of the device and drive conversions. Reia has reached glolal audiences in their first year of business.",
+            intro: "Reia is a medical device company that provides support for women. They recently launched a new FDA approved device and needed a website to showcase their product and provide information to potential customers. The goal was to create a modern, user-friendly website that would effectively communicate the benefits of the device and drive conversions. Reia has reached global audiences in their first year of business.",
         },
         approach: {
             title: "Our Approach",
@@ -32,10 +34,6 @@ const jobData = [
         website: {
             title: "Website",
             images: [],
-        },
-        materials: {
-            title: "Materials",
-            description: "The website was built on a custom WordPress platform, allowing for easy updates and maintenance. We implemented SEO best practices to ensure the website ranks well in search engines and is easily discoverable by potential customers.",
         },
         featured: true,
     },
@@ -70,17 +68,13 @@ const jobData = [
             title: "Website",
             images: [],
         },
-        materials: {
-            title: "Materials",
-            description: "The website was built on a custom SquareSpace platform, to allow for the shop to stick with a familiar platform and keep all maintenance in-house.",
-        },
         featured: false,
     },
     {
         id: 3,
         caseType: "Case Study",
         image: ChungLi,
-        company: "Chung Li The Conisseur",
+        company: "Chung-Li The Conisseur",
         services: [
             "Package Design",
         ],
@@ -96,19 +90,19 @@ const jobData = [
         design: {
             title: "Design",
             description: "The design of the packaging was inspired by the Willy Wonka's Oompa Loompas. The design showcases a modern twist on Oompa Loompas and showcases games to enhance the overall experience of the product.",
-            images: [],
+            images: [
+                Oompa,
+            ],
         },
         identity: {
             title: "Identity and design",
-            images: [],
+            images: [
+                Identity,
+            ],
         },
         website: {
             title: "",
             images: [],
-        },
-        materials: {
-            title: "Materials",
-            description: "The packaging was created using high-quality materials that reflect the brand's commitment to quality and sustainability. We also implemented a unique QR code that allows customers to access social media.",
         },
         featured: true,
     },

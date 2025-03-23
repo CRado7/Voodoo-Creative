@@ -1,12 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
+import ScrollToTop from './components/ScrollToTop';
 import LandingPage from './pages/LandingPage';
 import HomePage from './pages/HomePage';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import OurWork from './pages/OurWork';
+import ProjectPage from './pages/ProjectPage';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
@@ -23,6 +25,7 @@ const AppContent = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/our-work" element={<OurWork />} />
+        <Route path="/our-work/:company" element={<ProjectPage />} />
       </Routes>
       {location.pathname !== '/' && <Footer />}
     </div>
@@ -32,6 +35,7 @@ const AppContent = () => {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <AppContent />
     </Router>
   );

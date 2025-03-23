@@ -15,10 +15,11 @@
 }
 
 body {
-  background-image: url('/background.png');
+  /* background-image: url('/background.png');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  color: black;
+  background-repeat: no-repeat; */
+  color: #333;
   text-align: center;
+  background-color: var(--background-color);
 }

@@ -3,13 +3,31 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-
 .contact-form {
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
+    margin: 0 0 50px 0
+}
+
+.contact-header { 
+    font-size: 72px;
+}
+
+.contact-intro {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    max-width: 1000px;
+    font-style: oblique;
+    text-align: left;
+}
+
+.contact-intro span {
+    font-weight: 700;
 }
 
 .input-field:nth-child(7),
@@ -30,11 +48,12 @@ input, select, textarea {
     flex: 1;
     min-width: 400px;
     padding: 0.5rem;
-    border: 2px solid rgb(160, 160, 160);
+    border: 2px solid var(--background-color-dark);
     font-size: 1rem;
     font-family: inherit;
     background-color: transparent;
     transition: border-color 0.3s ease;
+    color: #213547;;
 }
 
 input:focus, select:focus, textarea:focus {
@@ -60,7 +79,7 @@ textarea, .file-upload {
     text-align: left;
 }
 
-button {
+/* button {
     background-color: black;
     color: white;
     border: none;
@@ -69,11 +88,11 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+} */
 
-button:hover {
+/* button:hover {
     background-color: cyan;
-}
+} */
 
 select:hover {
     border-color: rgb(160, 160, 160);

@@ -5,7 +5,7 @@ import '../styles/OurWork.css';
 
 const OurWork = () => {
     return (
-        <div className="container">
+        <div className="container fade">
             <div className="our-work">
                 <p className="page-title">Some of the companies that we have brought our magic to</p>
                 <div className="work-grid">
@@ -15,7 +15,7 @@ const OurWork = () => {
                             className="work-item"  
                         >
                             <div className="work-image">
-                                <Link to={`/work/${job.company}`} style={{ backgroundImage: `url(${job.image})` }}>
+                                <Link to={`/our-work/${job.company}`} style={{ backgroundImage: `url(${job.image})` }}>
                                 </Link>
                             </div>
                             <div className="work-content">

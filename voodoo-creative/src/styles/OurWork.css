@@ -8,10 +8,6 @@
     margin-bottom: 2rem;
 }
 
-.our-work {
-    padding: 10rem  0;
-}
-
 .work-grid {
     display: flex;
     flex-wrap: wrap;
@@ -75,7 +71,7 @@
 }
 
 .separator {
-    color: #ededed;
+    color: #f0f0f0;
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {

@@ -11,22 +11,19 @@ const Contact = () => {
         businessSite: '',
         reason: '',
         message: '',
-        image: null, // State to store the uploaded image
+        image: null,
     });
 
     const handleChange = (e) => {
         if (e.target.name === 'image') {
-            // Handle file input change
             setFormData({ ...formData, [e.target.name]: e.target.files[0] });
         } else {
-            // Handle other form fields
             setFormData({ ...formData, [e.target.name]: e.target.value });
         }
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission (e.g., send data to server)
         alert('Message sent! We’ll get back to you soon.');
         setFormData({
             reason: '',
@@ -42,14 +39,16 @@ const Contact = () => {
     };
 
     return (
-        <div className="container">
-            <h1>Contact Us</h1>
-            <p>
-                Ready to chat about your digital marketing goals? Just fill out our consultation form, and one of our team members will reach out to you soon.
+        <div className="container fade">
+            <h1 className="contact-header">Contact Us</h1>
+            <div className="contact-intro">
+                <p>
+                    Ready to chat about your digital marketing goals or brand needs? Just fill out our consultation form, and one of our team members will reach out to you soon.{' '}
+                    <span>We're all about helping businesses thrive online, and we're stoked to connect with you!</span>
+                </p>
                 <br />
-                We're all about helping businesses thrive online, and we're stoked to connect with you!
-            </p>
-            <p>Fields marked with an * are required</p>
+                <p>Fields marked with an * are required</p>
+            </div>
             <form className="contact-form" onSubmit={handleSubmit}>
                 <input
                     type="text"

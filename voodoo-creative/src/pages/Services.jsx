@@ -1,18 +1,25 @@
 import React from 'react';
+import downArrow from "../assets/downArrow.svg";
 import '../styles/Services.css';
 
 const Services = () => {
     return (
         <div className="container">
-            <div className="services-image">
+            <div className="services-hero">
+                <div className="services-image"></div>
                 <div className="services-hero-left">
-                    <h1>It's not about what you do</h1>
+                    <h1>It's not about <span className="bold">what</span> you do</h1>
                 </div>
                 <div className="services-hero-right">
-                    <h1>It's about how you do it</h1>
+                    <h1>It's about <span className="bold">how</span> you do it</h1>
+                </div>
+                <div className="down-arrow">
+                    <a href="#service-content">
+                        <img src={downArrow} alt="Down Arrow" />
+                    </a>
                 </div>
             </div>
-            <div className="services-content">
+            <div className="services-content" id="service-content">
                 <h1>What We Do</h1>
                 <div className="services-grid">
                     <div className="services-item">
@@ -29,11 +36,11 @@ const Services = () => {
                         <p>We design stunning graphics that capture attention and convey your message.</p>
                     </div>
                     <div className="services-item">
-                        <h2>Photography</h2>
-                        <p>Our photography services capture the essence of your brand.</p>
+                        <h2>Web Development</h2>
+                        <p>We create responsive websites</p>
                     </div>
                     <div className="services-item">
-                        <h2>Video Production</h2>
+                        <h2>Promotional Products / Retail</h2>
                         <p>We create engaging videos that tell your brand's story.</p>
                     </div>
                     <div className="services-item">

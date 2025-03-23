@@ -11,7 +11,7 @@
 } */
 
 .navbar {
-    background-color: black;
+    background-color: #333;
     padding: 10px;
     position: fixed;
     display: inline-block;
@@ -25,7 +25,7 @@
     position: absolute;
     width: 15px;
     height: 44px;
-    background-color: black;
+    background-color: #333;
     transform: rotate(180deg);
     top: 0;
     right: -15px; /* Extend beyond the right edge */
