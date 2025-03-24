@@ -95,7 +95,7 @@ const HomePage = () => {
                 </div>
                 <div className="contact">
                     <h1>Have a project in mind?</h1>
-                    <button>Get in touch</button>
+                    <Link to="/contact">Get in touch</Link>
                 </div>
             </div>
         </div>

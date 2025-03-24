@@ -284,6 +284,17 @@
   background-color: #333;
 }
 
+.contact a {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  margin: 30px 0 0 0;
+  padding: 10px 20px;
+  color: #333;
+  font-size: .75em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 @media (max-width: 1250px) {
   .home-hero-text {
     font-size: 1.5em;

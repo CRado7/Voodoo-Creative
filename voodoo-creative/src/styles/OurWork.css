@@ -56,6 +56,18 @@
     filter: brightness(0.8);
 }
 
+.work-image a:hover .work-content h2 {
+    background-color: #333;
+}
+
+/* .work-item:hover .work-content h2, .work-item:hover .work-content p {
+    background-color: #333;
+}
+
+.work-item:hover .work-content h2, .work-item:hover .work-content p {
+    color: var(--background-color);
+} */
+
 .work-content {
     text-align: left;
     display: flex;
@@ -66,14 +78,16 @@
     display: inline-block;
     margin: 2.5px 0;
     padding: 0 1.5rem 0 0.25rem;
-    color: black;
+    color: #333;
     text-align: left;
     background-color: #cecece;
+    transition: 0.3s ease;
 }
 
 .separator {
     color: #f0f0f0;
 }
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .work-grid {

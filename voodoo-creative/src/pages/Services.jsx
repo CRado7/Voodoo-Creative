@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import servicesData from '../data/servicesData';
 import downArrow from "../assets/downArrow.svg";
 import '../styles/Services.css';
 
@@ -19,34 +21,35 @@ const Services = () => {
                     </a>
                 </div>
             </div>
-            <div className="services-content" id="service-content">
-                <h1>What We Do</h1>
+            <div className="services-intro">
+                <p>
+                    Making a brand is so much more than just a logo.
+                    It is a <span className="shine">feeling</span>, a <span className="shine">vibe</span>, a <span className="shine">culture</span>.
+                    We put our hearts into everything we do so your brand can <span className="shine">shine</span>.
+                    We eat, sleep, and breathe everything creative.
+                    <br />
+                </p>
+                    <span className="color">We are Voodoo Creative.</span>
+
+                <Link to="/contact">Let's get started</Link>
+            </div>
+            <div className="services-content fade" id="service-content">
                 <div className="services-grid">
-                    <div className="services-item">
-                        {/* flex grow? */}
-                        <h2>Branding</h2>
-                        <p>We create unique brand identities that resonate with your audience.</p>
-                    </div>
-                    <div className="services-item">
-                        <h2>Web Design</h2>
-                        <p>Our web designs are user-friendly and visually appealing.</p>
-                    </div>
-                    <div className="services-item">
-                        <h2>Graphic Design</h2>
-                        <p>We design stunning graphics that capture attention and convey your message.</p>
-                    </div>
-                    <div className="services-item">
-                        <h2>Web Development</h2>
-                        <p>We create responsive websites</p>
-                    </div>
-                    <div className="services-item">
-                        <h2>Promotional Products / Retail</h2>
-                        <p>We create engaging videos that tell your brand's story.</p>
-                    </div>
-                    <div className="services-item">
-                        <h2>Social Media Management</h2>
-                        <p>We manage your social media presence to enhance your brand visibility.</p>
-                    </div>
+                    {servicesData.map((service) => (
+                        <div className="services-card" key={service.id}>
+                            <div className="services-card-title">
+                                <h2>{service.title}</h2>
+                            </div>
+                            <div className="services-card-info">
+                                <p>{service.description}</p>
+                                <ul>
+                                    {service.list.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
