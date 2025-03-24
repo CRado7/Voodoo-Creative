@@ -15,7 +15,7 @@ const OurWork = () => {
                             className="work-item"  
                         >
                             <div className="work-image">
-                                <Link to={`/our-work/${job.company}`} style={{ backgroundImage: `url(${job.image})` }}>
+                                <Link to={`/our-work/${job.company}`} style={{ backgroundImage: `url(${job.thumbnail})` }}>
                                 </Link>
                             </div>
                             <div className="work-content">

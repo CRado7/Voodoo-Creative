@@ -1,27 +1,102 @@
 .intro-container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
   width: 100%;
   height: 100dvh;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  animation: slide-out .75s ease-in-out forwards;
+  animation-delay: 8s;
+  pointer-events: none;
+  background-image: url('/Logo-Repeat.svg');
+  background-size: 100px 100px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.intro-container::before, .intro-container::after {
+  content: '';
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  height: 300px;
+  z-index: 2; 
+  pointer-events: none;
+}
+
+.intro-container::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 1) 25%, rgba(51, 51, 51, 0) 100%);
+}
+
+.intro-container::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(51, 51, 51, 1) 25%, rgba(51, 51, 51, 0) 100%);
+}
+
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.sub-container {
+  width: 100%;
 }
 
 .intro {
   flex: 1;
   padding: 50px;
   text-align: left;
+  color: var(--background-color);
 }
 
 .intro h1 {
-  font-size: 2.5rem;
+  font-size: 5rem;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.slide-left {
+  animation: slide-left 1s ease-in-out forwards;
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-right {
+  /* font-style: oblique; */
+  animation: slide-right 6s ease-in-out forwards;
+}
+
+@keyframes slide-right {
+  0%, 50%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .team-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 100dvh; 
 }
 
 .team-grid {

@@ -70,4 +70,5 @@
 
 .navbar .active {
     color: cyan;
+    text-shadow: 0 0 5px cyan, 0 0 10px cyan;
 }

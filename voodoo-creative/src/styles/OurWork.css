@@ -29,6 +29,7 @@
 
 .work-item:nth-child(1) {
     flex: 1 1 100%;
+    opacity: 1;
 }
 
 .work-item:nth-child(2n+2) {
@@ -80,6 +81,6 @@
     }
 
     .work-item {
-        width: 100%; /* Make full width on smaller screens */
+        width: 100%;
     }
 }

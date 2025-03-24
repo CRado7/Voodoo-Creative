@@ -19,7 +19,6 @@
   left: 0;
   padding: 5%;
   text-align: left;
-  /* text-transform: uppercase; */
   color: #333;
 }
 
@@ -50,6 +49,7 @@
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 3;
 }
 
 .down-arrow img {
@@ -59,10 +59,10 @@
 
 @keyframes bounce {
   0%, 100% {
-    transform: translateY(0); /* Start and end at original position */
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(15px); /* Move up */
+    transform: translateY(15px);
   }
 }
 
@@ -84,19 +84,32 @@
   background-color: #333;
   z-index: 1;
   overflow: visible;
+  background-image: url('/Logo-Repeat.svg');
+  background-size: 100px 100px;
+  background-position: center;
+  background-repeat: repeat;
 }
 
-.motto-container::before {
+.motto-container::before, .motto-container::after {
   content: '';
-  position: sticky;
-  top: 0;
   left: 0;
   width: 100%;
   height: 100dvh;
   height: 300px;
-  background: linear-gradient(to bottom, rgba(51, 51, 51, 1) 25%, rgba(51, 51, 51, 0) 100%);
-  z-index: 10; 
+  z-index: 2; 
   pointer-events: none;
+}
+
+.motto-container::before {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 1) 25%, rgba(51, 51, 51, 0) 100%);
+}
+
+.motto-container::after {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(51, 51, 51, 1) 25%, rgba(51, 51, 51, 0) 100%);
 }
 
 .motto-content {
@@ -106,6 +119,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #333;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -138,7 +152,7 @@
 
 .work-container {
   width: 100%;
-  height: 100dvh;
+  height: auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -210,7 +224,6 @@
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 1.5rem;
   margin: 0 auto;
-  /* width: clamp(200px, 200px, 100vw); */
   padding: 50px 20px;
 }
 
@@ -219,14 +232,13 @@
   flex-direction: column;
   align-items: left;
   flex: 1 1 400px; /* Flex-grow, flex-shrink, flex-basis */
-  aspect-ratio: 1 / 1;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
 
 .featured-work-image {
   width: 100%;
-  height: 300px;
+  aspect-ratio: 7 / 5;
   margin: 0 0 2.5px 0;
 }
 
@@ -270,5 +282,22 @@
   align-items: center;
   position: relative;
   background-color: #333;
-  z-index: 1;
+}
+
+@media (max-width: 1250px) {
+  .home-hero-text {
+    font-size: 1.5em;
+  }
+
+  .home-hero-text h1 {
+    font-size: 2.5em;
+  }
+
+  .home-hero-text span.bold {
+    font-size: 1.5em;
+  }
+
+  .home-hero-text span.elegant {
+    font-size: 1.2em;
+  }
 }

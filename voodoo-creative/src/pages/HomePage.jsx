@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import jobData from '../data/jobData.js';
 import downArrow from "../assets/downArrow.svg";
@@ -9,8 +9,6 @@ const industries = ["Medical Companies", "Cannabis Companies", "Law Enforcement 
 const HomePage = () => {
     const [currentIndustry, setCurrentIndustry] = useState(industries[0]);
     const [heroOpacity, setHeroOpacity] = useState(1);
-    const scrollContainerRef = useRef(null);
-    const featuredContainerRef = useRef(null);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -34,31 +32,6 @@ const HomePage = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
       }, []);
-
-
-        // Horizontal scroll effect
-    //     useEffect(() => {
-    //     const handleHorizontalScroll = () => {
-    //         const scrollY = window.scrollY;
-    //         const windowHeight = window.innerHeight;
-    //         const horizontalSection = document.querySelector(".horizontal-scroll");
-    //         const sectionTop = horizontalSection.offsetTop;
-    //         const totalScroll = windowHeight * 1; // Adjust for smoothness
-    
-    //         // Calculate scroll progress (0 at start, 1 when fully scrolled)
-    //         const progress = Math.max(0, Math.min((scrollY - sectionTop) / totalScroll, 1));
-    
-    //         // Move the horizontal-scroll section from right to left
-    //         horizontalSection.style.transform = `translateX(${(1 - progress) * 100}vw)`;
-    //     };
-    
-    //     window.addEventListener("scroll", handleHorizontalScroll);
-        
-    //     return () => {
-    //         window.removeEventListener("scroll", handleHorizontalScroll);
-    //     };
-    // }, []);
-
 
     return (
         <div className="container">
@@ -108,7 +81,7 @@ const HomePage = () => {
                         {jobData.filter(job => job.featured).map((job) => (
                             <div key={job.id} className="featured-work-item">
                             <div className="featured-work-image">
-                                <Link to={`/our-work/${job.company}`} style={{ backgroundImage: `url(${job.image})` }}>
+                                <Link to={`/our-work/${job.company}`} style={{ backgroundImage: `url(${job.thumbnail})` }}>
                                 </Link>
                             </div>
                             <div className="featured-work-content">
@@ -124,7 +97,6 @@ const HomePage = () => {
                     <h1>Have a project in mind?</h1>
                     <button>Get in touch</button>
                 </div>
-                {/* </div> */}
             </div>
         </div>
     );

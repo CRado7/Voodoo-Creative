@@ -82,3 +82,27 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
+@media (max-width: 750px) {
+    .services-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    .services-hero-left, .services-hero-right {
+        position: relative;
+        width: 100%;
+        padding: 30px 10px;
+    }
+    .services-hero-left h1, .services-hero-right h1 {
+        font-size: 1.75em;
+    }
+    .services-hero-left span.bold, .services-hero-right span.bold {
+        font-size: 1.5em;
+    }
+    .services-item {
+        padding: 10px;
+    }
+}

@@ -1,13 +1,23 @@
-import Reia from "../assets/reia-thumbnail.png";
+import Thumbnail from "../assets/reia/Reia-Thumbnail 2.png";
+    import reiaBanner from "../assets/reia/Reia-Banner.svg";
+    import reiaSymbol from "../assets/reia/Reia-Symbol.svg";
+    import reiaHome from "../assets/reia/Reia-Home.png";
 import TPS from "../assets/tps-thumbnail.png";
-import ChungLi from "../assets/chung-li/Oompa-Banner.svg";
+import ChungLiThumbnail from "../assets/chung-li/Chung-Li-Thumbnail.svg";
+    import ChungLi from "../assets/chung-li/Oompa-Banner.svg";
     import Oompa from "../assets/chung-li/Oompa.png";
-    import Identity from "../assets/chung-li/Identity.png";
+    import Template from "../assets/chung-li/Template.png";
+    import Back from "../assets/chung-li/Back.png";
+    import Left from "../assets/chung-li/Left.png";
+    import Front from "../assets/chung-li/Front.png";
+    import Right from "../assets/chung-li/Right.png";
+
 const jobData = [
     {
         id: 1,
         caseType: "Case Study",
-        image: Reia,
+        thumbnail: Thumbnail,
+        image: reiaBanner,
         company: "Reia",
         services: [
             "Web Design",
@@ -25,21 +35,34 @@ const jobData = [
         design: {
             title: "Design",
             description: "The design of the website was inspired by the medical device itself, with a focus on typography and a color palette that reflects the brand's identity. We created a responsive design that works seamlessly on all devices, ensuring a positive user experience.",
-            images: [],
+            images: [
+                reiaSymbol,
+            ],
         },
         identity: {
-            title: "Identity and design",
-            images: [],
-        },
-        website: {
             title: "Website",
-            images: [],
+            images: [
+                {
+                    image: reiaHome,
+                    caption: "Reia Home Page Layout",
+                },
+            ],
         },
+        extraImages: {
+            images: [
+                {
+                    image: reiaBanner,
+                    caption: "Reia Banner",
+                },
+            ],
+        },
+
         featured: true,
     },
     {
         id: 2,
         caseType: "Case Study",
+        thumbnail: TPS,
         image: TPS,
         company: "The Print Shop",
         services: [
@@ -61,18 +84,19 @@ const jobData = [
             images: [],
         },
         identity: {
-            title: "Identity and design",
-            images: [],
-        },
-        website: {
             title: "Website",
             images: [],
         },
+        extraImages: {
+            images: [
+            ],
         featured: false,
+    },
     },
     {
         id: 3,
         caseType: "Case Study",
+        thumbnail: ChungLiThumbnail,
         image: ChungLi,
         company: "Chung-Li The Conisseur",
         services: [
@@ -95,17 +119,36 @@ const jobData = [
             ],
         },
         identity: {
-            title: "Identity and design",
+            title: "Package Design",
             images: [
-                Identity,
+                {
+                    image: Back,
+                    caption: "Back",
+                },
+                {
+                    image: Left,
+                    caption: "Left",
+                },
+                {
+                    image:  Front,
+                    caption: "Front",
+                },
+                {
+                    image:  Right,
+                    caption: "Right",
+                },
+                {
+                    image:  Template,
+                    caption: "Template",
+                }
             ],
         },
-        website: {
-            title: "",
-            images: [],
+        extraImages: {
+            images: [
+            ],
         },
         featured: true,
     },
-]
+];
 
 export default jobData;

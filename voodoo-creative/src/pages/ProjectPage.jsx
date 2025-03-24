@@ -39,7 +39,22 @@ const ProjectPage = () => {
             </div>
             <div className="project-identity">
                 <p className="project-item-title">{project.identity.title}</p>
-                <img src={project.identity.images} alt={project.company} />
+                <div className="project-identity-images">
+                    {project.identity.images.map((image, index) => (
+                        <div key={index} className="project-identity-image">
+                            <img src={image.image} alt={project.company} />
+                            <p>{image.caption}</p>
+                        </div>
+                    ))}
+                </div>
+                <div className="extra-images">
+                    {project.extraImages.images.map((image, index) => (
+                        <div key={index} className="extra-image">
+                            <img src={image.image} alt={project.company} />
+                            <p>{image.caption}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );

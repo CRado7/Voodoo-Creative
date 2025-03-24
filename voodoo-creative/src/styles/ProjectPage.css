@@ -20,16 +20,17 @@
     width: clamp(400px, 75%, 1000px );
     text-align: right;
 }
+
 .project-hero {
     display: block;
     width: 90%;
-    height: 500px;
+    height: auto;
 }
 
 .project-hero img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:contain;
     object-position: center;
 }
 
@@ -47,7 +48,7 @@
     justify-content: center;
     text-align: left;
     width: 100%;
-    padding: 50px 5%;
+    padding: 25px 5%;
     flex-wrap: wrap;
 }
 
@@ -105,5 +106,42 @@
     justify-content: flex-start;
 }
 
+.project-identity-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-identity-image {
+    flex: 1 1 20%;
+    min-width: 350px;
+    text-align: center;
+}
+
+.project-identity-image p, .extra-images p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media (max-width: 1250px) {
+    .case-type h1 {
+        font-size: 5em;
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: right;
+    }
+}
+
+.extra-images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px 5%;
+}
 
 

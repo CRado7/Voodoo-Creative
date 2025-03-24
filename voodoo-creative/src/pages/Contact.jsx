@@ -44,7 +44,7 @@ const Contact = () => {
             <div className="contact-intro">
                 <p>
                     Ready to chat about your digital marketing goals or brand needs? Just fill out our consultation form, and one of our team members will reach out to you soon.{' '}
-                    <span>We're all about helping businesses thrive online, and we're stoked to connect with you!</span>
+                    <span>We're all about helping businesses thrive, and we're stoked to connect with you!</span>
                 </p>
                 <br />
                 <p>Fields marked with an * are required</p>
