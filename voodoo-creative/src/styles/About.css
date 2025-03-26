@@ -10,7 +10,7 @@
   left: 0;
   z-index: 50;
   /* animation: slide-out .75s ease-in-out forwards; */
-  animation-delay: 8s;
+  /* animation-delay: 8s; */
   pointer-events: none;
   background-image: url('/Logo-Repeat.svg');
   background-size: 100px 100px;
@@ -39,14 +39,14 @@
   background: linear-gradient(to top, rgba(51, 51, 51, 1) 25%, rgba(51, 51, 51, 0) 100%);
 }
 
-@keyframes slide-out {
+/* @keyframes slide-out {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
   }
-}
+} */
 
 .sub-container {
   width: 100%;
@@ -63,11 +63,11 @@
 }
 
 .slide-left {
-  animation: slide-left 1s ease-in-out forwards;
+  animation: slide-left 2s ease-in-out forwards;
 }
 
 @keyframes slide-left {
-  0% {
+  0%, 25% {
     opacity: 0;
   }
   100% {
@@ -77,11 +77,11 @@
 
 .slide-right {
   /* font-style: oblique; */
-  animation: slide-right 6s ease-in-out forwards;
+  animation: slide-right 5s ease-in-out forwards;
 }
 
 @keyframes slide-right {
-  0%, 50%{
+  0%, 75%{
     opacity: 0;
   }
   100% {
