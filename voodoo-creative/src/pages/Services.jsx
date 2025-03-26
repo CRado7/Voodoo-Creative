@@ -41,7 +41,8 @@ const Services = () => {
                                 <h2>{service.title}</h2>
                             </div>
                             <div className="services-card-info">
-                                <p>{service.description}</p>
+                                <h2>{service.description}</h2>
+                                <p>What we can help with:</p>
                                 <ul>
                                     {service.list.map((item, index) => (
                                         <li key={index}>{item}</li>
