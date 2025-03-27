@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import ScrollToTop from './components/ScrollToTop';
-import LandingPage from './pages/LandingPage';
+// import LandingPage from './pages/LandingPage';
 import HomePage from './pages/HomePage';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -17,17 +17,19 @@ const AppContent = () => {
 
   return (
     <div className="App">
-      {location.pathname !== '/' && <NavBar />}
+      <NavBar />
+      {/* {location.pathname !== '/' && <NavBar />} */}
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/home" element={<HomePage />} />
+        {/* <Route path="/" element={<LandingPage />} /> */}
+        <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/our-work" element={<OurWork />} />
         <Route path="/our-work/:company" element={<ProjectPage />} />
       </Routes>
-      {location.pathname !== '/' && <Footer />}
+      {/* {location.pathname !== '/' && <Footer />} */}
+      <Footer />
     </div>
   );
 };

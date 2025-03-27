@@ -9,7 +9,7 @@ const NavBar = () => {
             <div className="navbar">
                 <ul>
                     <li><img src={NavLogo} alt="Voodoo Creative"/></li>
-                    <li><NavLink to="/home" className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink></li>
+                    <li><NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink></li>
                     <li>|</li>
                     <li><NavLink to="/our-work" className={({ isActive }) => (isActive ? 'active' : '')}>Our Work</NavLink></li>
                     <li>|</li>
