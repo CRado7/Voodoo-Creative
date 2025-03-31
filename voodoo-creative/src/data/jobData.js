@@ -2,7 +2,7 @@ import Thumbnail from "../assets/reia/Reia-Thumbnail 2.png";
     import reiaBanner from "../assets/reia/Reia-Banner.svg";
     import reiaSymbol from "../assets/reia/Reia-Symbol.svg";
     import reiaHome from "../assets/reia/Reia-Home.png";
-import TPS from "../assets/tps-thumbnail.png";
+import TPS from "../assets/the-print-shop/Shop-Banner.svg";
 import ChungLiThumbnail from "../assets/chung-li/Chung-Li-Thumbnail.svg";
     import ChungLi from "../assets/chung-li/Oompa-Banner.svg";
     import Oompa from "../assets/chung-li/Oompa.png";
@@ -30,11 +30,11 @@ const jobData = [
         },
         approach: {
             title: "Our Approach",
-            description: "We took a collaborative approach with Reia to understand their brand, target audience, and goals for the website. We conducted research on the medical device industry and analyzed competitors to identify best practices and opportunities for differentiation. We then developed a comprehensive design and development plan that included wireframes and a content strategy.",
+            description: "We took a collaborative approach with Reia to gain a deep understanding of their brand, target audience, and website goals. Our research into other medical device websites allowed us to identify best practices and opportunities for differentiation. From there, we developed a comprehensive design and development plan, incorporating wireframes and a strategic content approach. Content strategy played a crucial role in the project, as we needed to distill large amounts of information into clear, digestible segments that effectively outlined the device’s usage and benefits.",
         },
         design: {
             title: "Design",
-            description: "The design of the website was inspired by the medical device itself, with a focus on typography and a color palette that reflects the brand's identity. We created a responsive design that works seamlessly on all devices, ensuring a positive user experience.",
+            description: "The website design was inspired by the medical device itself, incorporating typography and a color palette that reflects the brand’s identity. The goal was to create a look and feel that is both inviting and reassuring—calm yet impactful. We developed a responsive design that ensures seamless functionality across all devices, providing a positive user experience. Clear calls to action and intuitive navigation guide users effortlessly to the information they need.",
             images: [
                 reiaSymbol,
             ],
@@ -72,15 +72,15 @@ const jobData = [
         tag: "A print shop that specializes in custom printing and design services.",
         header: {
             title: "Creating a modern website for a traditional print shop.",
-            intro: "The Print Shop is a family-owned business that has been in operation for over 30 years. They needed a new website to showcase their services and attract new customers. The goal was to create an updated, user-friendly website that would be easy to navigate and visually appealing.",
+            intro: "The Print Shop is a family-owned business that has been in operation for 3 decades. They needed a new website to showcase their services and attract new customers. The goal was to create an updated, user-friendly website that would not only reflect the print shop's legacy but also appeal to a modern audience.",
         },
         approach: {
             title: "Our Approach",
-            description: "We worked closely with The Print Shop to understand their brand and target audience. A once abondaoned website was reimagined to be a modern, user-friendly site that would effectively showcase their services and enhance the customer experience.",
+            description: "Collaborating with The Print Shop involved several on-site visits, allowing us to observe their operations firsthand and connect with their team. This experience provided valuable insights into how the website should be designed. What was once an outdated, abandoned site was transformed into a modern, user-friendly platform that effectively showcases their services and enhances the customer experience. The design is sharp, clean, and intuitive, ensuring seamless navigation. Additionally, we integrated a streamlined quote request form, making it easy for customers to get in touch and submit artwork directly through the site.",
         },
         design: {
             title: "Design",
-            description: "The design of the website was inspired by the print shop's history and legacy. We created a modern, clean design that highlights their services and makes it easy for customers to request quotes and understand the art submission guidelines.",
+            description: "The design of the website was inspired by the day-to-day operations of the shop itself. Unlike many print shops, this one is clean, organized, and has a natural, welcoming vibe. We translated that into a modern, streamlined design that not only showcases their services but also mirrors the efficiency and attention to detail that define their workflow. Every element was carefully crafted to reflect their brand’s personality, ensuring a seamless digital experience. The result is a visually appealing, user-friendly site that resonates with both new and returning customers.",
             images: [],
         },
         identity: {
@@ -109,7 +109,7 @@ const jobData = [
         },
         approach: {
             title: "Our Approach",
-            description: "We worked closely with Chung Li The Conisseur to understand their brand and target audience. We conducted research on the cannabis industry and analyzed competitors to identify best practices and opportunities for differentiation. We then developed a comprehensive design plan that included packaging and branding.",
+            description: "When we say we can do anything, we mean it—Chung-Li put that to the test. Drawing inspiration from Willy Wonka’s Oompa Loompas, we reimagined the classic characters with a modern twist. The design incorporates vibrant colors, playful typography, and engaging graphics that bring the brand to life. To further enhance the experience, we integrated interactive elements such as games and puzzles on the packaging, adding an extra layer of fun and excitement for consumers."
         },
         design: {
             title: "Design",

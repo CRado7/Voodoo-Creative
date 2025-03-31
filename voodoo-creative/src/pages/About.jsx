@@ -34,7 +34,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="team-container fade">
-                    <h1>Meet the Team</h1>
+                    <h1>Meet the founder</h1>
                     <div className="team-grid">
                         {teamData.map((member) => (
                             <div key={member.id} className="team-member" onClick={() => handleImageClick(member)}>

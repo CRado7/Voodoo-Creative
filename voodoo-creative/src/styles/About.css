@@ -96,12 +96,21 @@
   height: 100dvh; 
 }
 
-.team-grid {
+/* .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
     width: 100%;
     max-width: 1600px;
+} */
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1600px;
 }
 
 .team-member {

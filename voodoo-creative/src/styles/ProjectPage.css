@@ -42,7 +42,7 @@
     text-align: left;
 }
 
-.project-header, .project-approach, .project-design, .project-identity, .project-identity img {
+.project-header, .project-design, .project-identity, .project-identity img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,6 +50,27 @@
     width: 100%;
     padding: 25px 5%;
     flex-wrap: wrap;
+}
+
+.project-approach {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; */
+    text-align: left;
+    padding: 25px 5%;
+}
+
+.project-approach p {
+    width: clamp(400px, 100%, 1000px);
+}
+
+.project-approach::before {
+    content: "";
+    display: block;
+    width: 100%;
+    border-top: 2px dotted #333;
+    margin: 50px auto;
 }
 
 .project-header {
