@@ -47,13 +47,13 @@ const Contact = () => {
                     <span>We're all about helping businesses thrive, and we're stoked to connect with you!</span>
                 </p>
                 <br />
-                <p>Fields marked with an * are required</p>
+                {/* <p>Fields marked with an * are required</p> */}
             </div>
             <form className="contact-form" onSubmit={handleSubmit}>
                 <input
                     type="text"
                     name="firstName"
-                    placeholder="First Name*"
+                    placeholder="First Name"
                     value={formData.firstName}
                     onChange={handleChange}
                     required
@@ -62,7 +62,7 @@ const Contact = () => {
                 <input
                     type="text"
                     name="lastName"
-                    placeholder="Last Name*"
+                    placeholder="Last Name"
                     value={formData.lastName}
                     onChange={handleChange}
                     required
@@ -71,7 +71,7 @@ const Contact = () => {
                 <input
                     type="email"
                     name="email"
-                    placeholder="Your Email*"
+                    placeholder="Your Email"
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -80,15 +80,16 @@ const Contact = () => {
                 <input
                     type="tel"
                     name="phone"
-                    placeholder="Phone Number*"
+                    placeholder="Phone Number"
                     value={formData.phone}
                     onChange={handleChange}
+                    required
                     className="input-field"
                 />
                 <input
                     type="text"
                     name="businessName"
-                    placeholder="Business Name"
+                    placeholder="Business Name (Optional)"
                     value={formData.businessName}
                     onChange={handleChange}
                     className="input-field"
@@ -96,7 +97,7 @@ const Contact = () => {
                 <input
                     type="url"
                     name="businessSite"
-                    placeholder="Business Website (URL)"
+                    placeholder="Business Website - URL (Optional)"
                     value={formData.businessSite}
                     onChange={handleChange}
                     className="input-field"

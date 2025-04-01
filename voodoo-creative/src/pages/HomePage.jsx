@@ -4,22 +4,22 @@ import jobData from '../data/jobData.js';
 import downArrow from "../assets/downArrow.svg";
 import "../styles/HomePage.css";
 
-const industries = ["Medical Companies", "Cannabis Companies", "Law Enforcement Departments", "Sports Teams", "Manufacturing Industry"];
+const industries = ["Medical", "Cannabis", "Law Enforcement", "Sports", "Manufacturing", "Retail"];
 
 const HomePage = () => {
-    const [currentIndustry, setCurrentIndustry] = useState(industries[0]);
+    // const [currentIndustry, setCurrentIndustry] = useState(industries[0]);
     const [heroOpacity, setHeroOpacity] = useState(1);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndustry((prev) => {
-                const currentIndex = industries.indexOf(prev);
-                return industries[(currentIndex + 1) % industries.length];
-            });
-        }, 3000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setCurrentIndustry((prev) => {
+    //             const currentIndex = industries.indexOf(prev);
+    //             return industries[(currentIndex + 1) % industries.length];
+    //         });
+    //     }, 3000);
 
-        return () => clearInterval(interval);
-    }, []);
+    //     return () => clearInterval(interval);
+    // }, []);
 
     // Scroll effect for the hero section
     useEffect(() => {
@@ -68,15 +68,19 @@ const HomePage = () => {
                     </a>
                 </div>
                 </div>
-                <div className="work-container">
-                    <div className="industries-container" id="industries-container">
-                        <h1>
-                            We have worked with{' '}
-                            <span className="fade-in-out">{currentIndustry}</span>
-                        </h1>
+                {/* <div className="industries-container" id="industries-container">
+                    <h1>We have worked with companies in these fields:</h1>
+                    <div className="industries-list">
+                        {industries.map((industry, index) => (
+                        <div key={index} className="industry-item">
+                            {industry}
+                        </div>
+                        ))}
                     </div>
+                </div> */}
+                <div className="work-container">
                     <div className="featured-work">
-                        {/* <h2>Featured Work</h2> */}
+                        <h2>Featured Work</h2>
                         <div className="featured-work-grid">
                         {jobData.filter(job => job.featured).map((job) => (
                             <div key={job.id} className="featured-work-item">
@@ -86,7 +90,6 @@ const HomePage = () => {
                             </div>
                             <div className="featured-work-content">
                                 <h2>{job.company}</h2>
-                                {/* <p>{job.tag}</p> */}
                             </div>
                             </div>
                         ))}

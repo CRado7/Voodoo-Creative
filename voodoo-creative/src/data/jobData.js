@@ -3,6 +3,7 @@ import Thumbnail from "../assets/reia/Reia-Thumbnail 2.png";
     import reiaSymbol from "../assets/reia/Reia-Symbol.svg";
     import reiaHome from "../assets/reia/Reia-Home.png";
 import TPS from "../assets/the-print-shop/Shop-Banner.svg";
+    import TPSthumb from "../assets/the-print-shop/ThePrintShop.svg";
 import ChungLiThumbnail from "../assets/chung-li/Chung-Li-Thumbnail.svg";
     import ChungLi from "../assets/chung-li/Oompa-Banner.svg";
     import Oompa from "../assets/chung-li/Oompa.png";
@@ -62,7 +63,7 @@ const jobData = [
     {
         id: 2,
         caseType: "Case Study",
-        thumbnail: TPS,
+        thumbnail: TPSthumb,
         image: TPS,
         company: "The Print Shop",
         services: [

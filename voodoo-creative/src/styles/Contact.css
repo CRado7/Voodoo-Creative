@@ -65,6 +65,10 @@ select {
     cursor: pointer;
 }
 
+select:has(option:disabled:checked) {
+    color: grey;
+  }
+
 textarea, .file-upload {
     height: 120px;
     resize: none;
